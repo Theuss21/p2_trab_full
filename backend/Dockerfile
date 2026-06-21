@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copia arquivos de dependência e instala (usando npm ci para integridade/SHA512)
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
 # Copia o restante do código
 COPY . .
